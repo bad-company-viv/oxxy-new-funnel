@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oxxy Health Savings | Safeguard Your Family's Healthcare Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#28A745",
+              "primary-dark": "#218838",
+              secondary: "#003366",
+              accent: "#FF4D00",
+              "background-light": "#F9FAFB",
+              "background-dark": "#111827",
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1F2937",
+              "text-light": "#1F2937",
+              "text-dark": "#F3F4F6",
+              "teal-custom": "#1CBBB4",
+            },
+            fontFamily: {
+              display: ["Montserrat", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              xl: "1rem",
+              "2xl": "1.5rem",
+            },
+          },
+        },
+      };
+    </script>
+<style type="text/tailwindcss">
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 30s linear infinite;
+        }
+        @keyframes bounce-slow {
+            0%, 100% {
+                transform: translateY(-5%);
+                animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+            }
+            50% {
+                transform: translateY(0);
+                animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+            }
+        }
+        .animate-bounce-slow {
+             animation: bounce-slow 3s infinite;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.95; transform: scale(1.02); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        .fill-1 {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300">
+<nav class="sticky top-0 z-50 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm shadow-sm border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center">
+<div class="flex items-center gap-2">
+<div class="bg-gradient-to-r from-teal-custom to-primary w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-xl">O</div>
+<span class="font-display font-bold text-2xl text-secondary dark:text-white tracking-tight">OXXY</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition" href="#">Plans</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition" href="#">Hospitals</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary font-medium transition" href="#">Testimonials</a>
+<button class="bg-secondary text-white px-6 py-2 rounded-full font-semibold hover:bg-opacity-90 transition">Login</button>
+</div>
+<div class="md:hidden flex items-center">
+<button class="text-gray-600 dark:text-white">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<section class="relative overflow-hidden pt-12 pb-20 lg:pt-24 lg:pb-32 bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-teal-custom/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 text-center lg:text-left">
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-teal-custom/10 text-teal-custom dark:text-teal-400 font-semibold text-sm">
+<span class="material-symbols-outlined text-base mr-2">verified_user</span> 
+                    Peace of Mind for Your Loved Ones
+                </div>
+<h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-secondary dark:text-white leading-tight">
+                    Safeguard Your Family's Future <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-custom to-primary">From Rising Healthcare Costs</span>
+</h1>
+<p class="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Ensure your family's health and financial security. Oxxy provides a permanent shield against medical inflation with guaranteed savings across India's top hospitals.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+<button class="bg-primary hover:bg-primary-dark text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-300 flex items-center justify-center gap-2">
+                        Protect My Family Now
+                        <span class="material-symbols-outlined">shield</span>
+</button>
+<button class="bg-white dark:bg-surface-dark text-secondary dark:text-white border-2 border-secondary dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 font-bold py-4 px-8 rounded-full shadow-sm transition duration-300 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-primary">play_circle</span>
+                        How We Protect You
+                    </button>
+</div>
+</div>
+<div class="relative">
+<div class="bg-white dark:bg-surface-dark p-2 rounded-2xl shadow-2xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-tr from-secondary/80 to-teal-custom/80 z-10 opacity-0 group-hover:opacity-10 transition-opacity"></div>
+<img alt="Happy multi-generational Indian family smiling together representing financial security" class="rounded-xl w-full h-auto object-cover transform transition duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD88UbR0U3QCL74rYCcr9qQv_82OFOYrLFs41KhOR7Gtwgknynu3jTCu5gvoHVpigwdFXDt83rnn-f4FG48oBIqWEfnH--Gh8_orghNuG87bOgz75D3gNY7nuOwOs09nDoDXCOIzkKiZM2lmG2Kaqv9VZ154uqEldCguGEatsHiRiyUoqDii4HapIcaYwD0uFGM7cTtwgrCvuV_EH-yFAlYpwNNOFqV4LEAdjc8VGZjWGw25mQPkv1q6JaCmr4fENuaQZrvRVwfu8k"/>
+<div class="absolute top-6 right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg z-20 flex items-center gap-3 animate-bounce-slow">
+<div class="bg-green-100 p-2 rounded-full text-green-600">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<div>
+<p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Family Protection</p>
+<p class="text-lg font-bold text-secondary dark:text-white">Active Security</p>
+</div>
+</div>
+</div>
+<div class="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-r from-blue-200 to-teal-200 dark:from-blue-900 dark:to-teal-900 rounded-full blur-3xl opacity-30"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-surface-dark border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="font-display text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+            Is your family protected from the rising cost of care?
+        </h2>
+<div class="bg-red-50 dark:bg-red-900/20 rounded-2xl p-8 border border-red-100 dark:border-red-900/50 shadow-sm">
+<div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+<div class="bg-white dark:bg-surface-dark p-4 rounded-full shadow-md">
+<span class="material-symbols-outlined text-4xl text-accent">trending_up</span>
+</div>
+<div class="text-left">
+<p class="text-gray-600 dark:text-gray-300 font-medium">Medical Inflation in India is currently at</p>
+<p class="font-display font-extrabold text-5xl md:text-6xl text-accent my-2">14%</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Gain peace of mind by ensuring medical bills never drain your family's future.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">Emotional &amp; Financial Security</span>
+<h2 class="font-display text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">Transparent Savings for Every Family</h2>
+<p class="text-gray-600 dark:text-gray-400 mt-4">We protect your wallet while you care for your loved ones' well-being.</p>
+</div>
+<div class="bg-white dark:bg-surface-dark rounded-3xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700">
+<div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-100 dark:divide-gray-700">
+<div class="p-8 flex flex-col justify-center items-center text-center bg-gray-50 dark:bg-gray-800/50">
+<div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/50 rounded-full flex items-center justify-center mb-4 text-secondary dark:text-blue-300">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="font-bold text-xl text-gray-800 dark:text-white mb-2">Diagnostic Scan</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Essential care for family wellness</p>
+</div>
+<div class="p-8 flex flex-col justify-center items-center text-center">
+<p class="text-gray-500 dark:text-gray-400 font-medium mb-2">Unprotected Cost</p>
+<p class="font-display font-bold text-4xl text-gray-400 line-through decoration-red-500 decoration-2">₹8,000</p>
+<p class="text-red-500 text-sm mt-2 font-medium">Financial Anxiety</p>
+</div>
+<div class="p-8 flex flex-col justify-center items-center text-center bg-green-50 dark:bg-green-900/10 relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">FAMILY SHIELDED PRICE</div>
+<p class="text-secondary dark:text-green-300 font-medium mb-2">Oxxy Family Rate</p>
+<p class="font-display font-bold text-5xl text-primary">₹4,800</p>
+<div class="mt-3 bg-white dark:bg-surface-dark px-4 py-1 rounded-full border border-primary/20 shadow-sm">
+<p class="text-primary font-bold text-sm">₹3,200 Peace of Mind Savings</p>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<p class="text-sm text-gray-500 italic mb-4">* Real-world savings that help you build a more secure future for your children.</p>
+</div>
+</div>
+</section>
+<section class="py-16 bg-white dark:bg-surface-dark overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 mb-10 text-center">
+<h2 class="font-display text-2xl font-bold text-gray-800 dark:text-white">A Reliable Network Caring for 200,000+ Centers Across India</h2>
+</div>
+<div class="relative w-full overflow-hidden group">
+<div class="absolute z-10 top-0 left-0 h-full w-20 bg-gradient-to-r from-white dark:from-surface-dark to-transparent"></div>
+<div class="absolute z-10 top-0 right-0 h-full w-20 bg-gradient-to-l from-white dark:from-surface-dark to-transparent"></div>
+<div class="flex space-x-12 animate-marquee whitespace-nowrap items-center py-4">
+<div class="flex items-center space-x-16 mx-4">
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Apollo Hospitals</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Fortis</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Max Healthcare</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Dr. Lal PathLabs</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Thyrocare</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Medanta</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Apollo Hospitals</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Fortis</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Max Healthcare</span>
+<span class="text-2xl font-bold text-gray-400 dark:text-gray-600 font-display">Dr. Lal PathLabs</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark relative">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="font-display text-3xl md:text-4xl font-bold text-secondary dark:text-white">A Simple Path to Family Well-being</h2>
+<p class="text-gray-600 dark:text-gray-400 mt-4">Providing security for your loved ones is now effortless and completely stress-free.</p>
+</div>
+<div class="space-y-12 relative">
+<div class="absolute top-0 bottom-0 left-10 w-0.5 bg-gradient-to-b from-secondary/20 via-teal-custom/40 to-primary/20 hidden sm:block"></div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 relative">
+<div class="flex-shrink-0 w-20 h-20 bg-secondary text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">1</div>
+<div class="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-md border-l-4 border-secondary flex-grow transition duration-300 hover:shadow-xl">
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Selecting Your Family's Shield</h3>
+<p class="text-gray-600 dark:text-gray-400">Choose the health protection plan that best embraces your family’s unique needs and ensures their future security without compromise.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 relative">
+<div class="flex-shrink-0 w-20 h-20 bg-teal-custom text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">2</div>
+<div class="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-md border-l-4 border-teal-custom flex-grow transition duration-300 hover:shadow-xl">
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Worry-Free Access to Care</h3>
+<p class="text-gray-600 dark:text-gray-400">Walk into any network hospital with absolute confidence; simply show your member code for priority reassurance and seamless assistance.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-8 relative">
+<div class="flex-shrink-0 w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg z-10">3</div>
+<div class="bg-white dark:bg-surface-dark p-8 rounded-2xl shadow-md border-l-4 border-primary flex-grow transition duration-300 hover:shadow-xl">
+<h3 class="text-xl font-bold text-secondary dark:text-white mb-3">Cherish Peace and Recovery</h3>
+<p class="text-gray-600 dark:text-gray-400">Experience instant financial relief with reduced bills, allowing your entire family to focus solely on what matters most—a full and speedy recovery.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-gradient-to-br from-secondary to-[#004080] dark:from-gray-900 dark:to-gray-800 text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative order-2 lg:order-1">
+<div class="absolute -inset-4 bg-primary/30 rounded-full blur-xl animate-pulse"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 aspect-video group cursor-pointer">
+<img alt="Indian customer video testimonial thumbnail" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Ty93eL2aBH5wUsKKoE592bgAC8X7hkHBDyJLGURWqc3VEuooMDhHW1n4Z5zHCYwRe6pQMFwhGkztL4kW_u3w32lZlt4y03dHBEk04_phwuDpIVwcEz-NW2JpK5ROOpDLTvzuKL9K_D3Z8u1h527gN4uuyc3suttfhseBdtbfJdVEhSUQEpIu6_37mqO8_RSnLY_ty1mlOsuKGgWY3Y4jUYv7wFE_Xu5D6UL3HZi-leQzRDgnEWDMS2AZWcAxJiuJKAJvrSwryTo"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:bg-primary transition duration-300">
+<span class="material-symbols-outlined text-5xl text-white">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<p class="font-bold text-lg">Priya Sharma</p>
+<p class="text-sm text-gray-300">Gained 100% Peace of Mind</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<span class="material-symbols-outlined text-6xl text-primary opacity-50">format_quote</span>
+<div class="space-y-4">
+<h3 class="text-primary font-bold tracking-widest uppercase text-sm">Real Emotional Security</h3>
+<h2 class="font-display text-3xl md:text-5xl font-bold leading-tight">
+                        "When my father needed urgent eye surgery, Oxxy saved us almost 40%. It wasn't just about the money, <span class="text-primary underline decoration-2 underline-offset-8">it was the complete peace of mind</span> knowing he was safe."
+                    </h2>
+</div>
+<div class="flex items-center space-x-4">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<span class="text-blue-100 font-medium">4.8/5 Families Experience Greater Security</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 dark:opacity-0"></div>
+<div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+<h2 class="font-display text-4xl md:text-5xl font-bold text-secondary dark:text-white mb-6">
+            Begin Your Journey to Healthcare Peace of Mind
+        </h2>
+<p class="text-xl text-gray-600 dark:text-gray-300 mb-10">
+            Join over 12 million Indian families who have secured their health and their savings with Oxxy's protective care.
+        </p>
+<div class="flex flex-col items-center gap-6">
+<button class="bg-primary hover:bg-primary-dark text-white text-xl font-bold py-5 px-12 rounded-full shadow-2xl transform hover:scale-105 transition duration-300 animate-pulse-slow flex items-center gap-3">
+                Protect My Family Today
+                <span class="material-symbols-outlined">chevron_right</span>
+</button>
+<p class="text-sm text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base align-text-bottom text-green-500">check_circle</span> 100% Family Security &amp; Satisfaction
+                <span class="mx-2">•</span>
+<span class="material-symbols-outlined text-base align-text-bottom text-green-500">check_circle</span> Cancel Anytime, No Stress Guaranteed
+            </p>
+</div>
+</div>
+</section>
+<footer class="bg-secondary dark:bg-black text-white pt-16 pb-8 border-t border-gray-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<div class="bg-gradient-to-r from-teal-custom to-primary w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm">O</div>
+<span class="font-display font-bold text-2xl tracking-tight">OXXY</span>
+</div>
+<p class="text-gray-300 text-sm leading-relaxed">
+                    Oxxy is dedicated to providing financial relief and emotional security to families across India through expertly negotiated healthcare rates.
+                </p>
+<div class="flex space-x-4 pt-2">
+<a class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition" href="#"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4 text-teal-custom">Trust Center</h4>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li><a class="hover:text-white transition" href="#">Family Success Stories</a></li>
+<li><a class="hover:text-white transition" href="#">Our Hospital Partners</a></li>
+<li><a class="hover:text-white transition" href="#">Safety Standards</a></li>
+<li><a class="hover:text-white transition" href="#">Secure Payments</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4 text-teal-custom">Protection Plans</h4>
+<ul class="space-y-2 text-gray-300 text-sm">
+<li><a class="hover:text-white transition" href="#">Everyday Wellness Shield</a></li>
+<li><a class="hover:text-white transition" href="#">Vital Protection Plan</a></li>
+<li><a class="hover:text-white transition" href="#">Thrive Family Guard</a></li>
+<li><a class="hover:text-white transition" href="#">Infinity Peace Plan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4 text-teal-custom">Support</h4>
+<ul class="space-y-3 text-gray-300 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">phone</span> 9999-000-111</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">email</span> security@oxxy.in</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> New Delhi, India</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-sm text-gray-400">© 2024 Oxxy Health. Protecting Indian Families Since Inception.</p>
+<div class="flex space-x-6 text-sm text-gray-400">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Security</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

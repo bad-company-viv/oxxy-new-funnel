@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/container-queries";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #15A352;
+  /* Bright green used for buttons and highlights */
+  --color-primary-dark: #128C46;
+  --color-secondary: #0A192F;
+  /* Very dark blue for text and footer */
+  --color-accent: #1BD1A5;
+  /* Teal-ish green used in gradients/icons */
+  --color-background-light: #F8F9FA;
+  /* Off-white page background */
+  --color-background-dark: #0A192F;
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark: #112240;
+  --color-text-light: #0A192F;
+  --color-text-dark: #E6F1FF;
+  --color-teal-custom: #1BD1A5;
+
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-bounce-slow: bounce-slow 3s infinite;
+  --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.95;
+    transform: scale(1.02);
+  }
+}
+
+@layer utilities {
+  .fill-1 {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
