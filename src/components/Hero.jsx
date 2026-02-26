@@ -17,15 +17,17 @@ export default function Hero() {
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                             During medical emergencies, money isn't enough. Give your friends and family the gift of Oxxy to drastically reduce their healthcare bills across India's top hospitals.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button className="bg-primary hover:bg-primary-dark text-white text-lg font-bold py-4 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition duration-300 flex items-center justify-center gap-2">
-                                Gift Protection Now
-                                <span className="material-symbols-outlined fill-1">health_and_safety</span>
-                            </button>
-                            <button className="bg-white dark:bg-surface-dark text-text-light dark:text-white border-2 border-gray-200 dark:border-gray-600 hover:border-text-light font-bold py-4 px-8 rounded-full shadow-sm transition duration-300 flex items-center justify-center gap-2">
-                                <span className="material-symbols-outlined text-primary fill-1">play_circle</span>
-                                See How Much They Save
-                            </button>
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-stretch">
+                            <a href="https://www.oxxy.in" className="relative w-full sm:w-[420px] min-h-[86px] pl-8 pr-18 bg-primary hover:bg-primary-dark text-white rounded-[3rem] shadow-[0_10px_24px_rgba(21,163,82,0.3)] transition duration-300 flex items-center justify-center">
+                                <span className="text-lg sm:text-xl font-bold tracking-tight leading-tight text-center sm:whitespace-nowrap">Gift Protection Now</span>
+                                <span className="material-symbols-outlined fill-1 absolute right-6 top-1/2 -translate-y-1/2 text-[2rem]">health_and_safety</span>
+                            </a>
+                            <a href="https://www.oxxy.in" className="relative w-full sm:w-[420px] min-h-[86px] pl-18 pr-8 bg-white dark:bg-surface-dark text-text-light dark:text-white border-2 border-[#d6d8de] dark:border-gray-600 hover:border-[#b9bec9] font-bold rounded-[3rem] shadow-[0_6px_16px_rgba(10,25,47,0.12)] transition duration-300 flex items-center justify-center">
+                                <span className="absolute left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-xl">play_arrow</span>
+                                </span>
+                                <span className="text-lg sm:text-xl font-bold tracking-tight leading-tight text-center sm:whitespace-nowrap">See How Much They Save</span>
+                            </a>
                         </div>
                     </div>
                     <div className="relative">
@@ -38,7 +40,7 @@ export default function Hero() {
                                 </div>
                                 <div>
                                     <p className="text-[10px] sm:text-xs text-gray-500 dark:text-gray-400 font-medium leading-tight">Average Savings</p>
-                                    <p className="text-sm border sm:text-base font-bold text-secondary dark:text-white leading-tight">Up to 40% Off</p>
+                                    <p className="text-sm sm:text-base font-bold text-secondary dark:text-white leading-tight">Up to 40% Off</p>
                                 </div>
                             </div>
                         </div>

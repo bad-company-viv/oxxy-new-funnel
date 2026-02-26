@@ -10,10 +10,10 @@ export default function CTA() {
                     Join millions of Indians who empower their friends and family to cut medical bills by up to 40% without compromising on the quality of care.
                 </p>
                 <div className="flex flex-col items-center gap-6">
-                    <button className="bg-primary hover:bg-primary-dark text-white text-xl font-bold py-5 px-12 rounded-full shadow-2xl transform hover:scale-105 transition duration-300 animate-pulse-slow flex items-center gap-3">
+                    <a href="https://www.oxxy.in" className="bg-primary hover:bg-primary-dark text-white text-xl font-bold py-5 px-12 rounded-full shadow-2xl transform hover:scale-105 transition duration-300 animate-pulse-slow flex items-center gap-3">
                         Give Them 40% Savings Today
                         <span className="material-symbols-outlined">favorite</span>
-                    </button>
+                    </a>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         <span className="material-symbols-outlined text-base align-text-bottom text-green-500">check_circle</span> Instant Activation for Any Mobile Number
                         <span className="mx-2">•</span>
