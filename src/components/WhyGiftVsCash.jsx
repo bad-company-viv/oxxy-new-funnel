@@ -1,105 +1,114 @@
-const comparisonRows = [
+const rows = [
     {
-        topic: "Impact Duration",
-        cash: "One-time relief for one bill",
-        oxxy: "Savings across repeated OPD and IPD usage",
+        icon: "schedule",
+        topic: "Lasts",
+        cash: "One-time, till the money is spent",
+        oxxy: "Every month, on every hospital visit",
     },
     {
-        topic: "Predictability",
-        cash: "No fixed discount on next treatment",
-        oxxy: "Defined instant discount slabs by plan",
+        icon: "favorite",
+        topic: "Feels Like",
+        cash: "\"Here, handle it yourself\"",
+        oxxy: "\"I've got your back — always\"",
     },
     {
-        topic: "Access Support",
-        cash: "No appointment or activation support",
-        oxxy: "Priority booking and faster activation options",
+        icon: "local_hospital",
+        topic: "Network",
+        cash: "Wherever they can find",
+        oxxy: "2,00,000+ hospitals across 1,500+ cities",
+    },
+    {
+        icon: "medication",
+        topic: "Pre-existing Diseases",
+        cash: "No structured help",
+        oxxy: "Fully works — diabetes, cancer, cardiac & more",
+    },
+    {
+        icon: "memory",
+        topic: "Emotional Recall",
+        cash: "Forgotten in weeks",
+        oxxy: "They think of you every time they save",
     },
 ];
 
 export default function WhyGiftVsCash() {
     return (
-        <section className="py-20 bg-[#eef2f5] dark:bg-background-dark">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <span className="text-primary font-bold tracking-wider uppercase text-sm">Smart Gifting</span>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">
-                        Why Gift OXXY Instead of Cash
+        <section className="py-24 relative overflow-hidden bg-gradient-to-br from-[#0a1929] via-[#0d2137] to-[#0a1929]">
+            {/* Background accents */}
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-teal-custom/10 rounded-full blur-[100px] pointer-events-none" />
+
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <span className="inline-flex items-center gap-2 text-teal-custom font-bold tracking-widest uppercase text-sm mb-4">
+                        <span className="material-symbols-outlined text-base">lightbulb</span>
+                        Smart Gifting
+                    </span>
+                    <h2 className="font-display text-4xl md:text-5xl font-bold text-white mt-2 leading-tight">
+                        Why Oxxy &gt; Cash
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-3xl mx-auto">
-                        Cash helps once. A plan helps every time they need treatment.
+                    <p className="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">
+                        Cash helps once. A gift that protects helps every single time they need care.
                     </p>
                 </div>
 
-                <div className="bg-white dark:bg-surface-dark rounded-[2rem] border border-gray-200 dark:border-gray-700 shadow-[0_16px_34px_rgba(15,23,42,0.08)] overflow-hidden">
-                    <div className="hidden md:grid md:grid-cols-[220px_1fr_1fr] border-b border-gray-200 dark:border-gray-700">
-                        <div className="p-8 bg-white dark:bg-surface-dark" />
-                        <div className="p-8 border-r border-gray-200 dark:border-gray-700 bg-[#f7f9fb] dark:bg-gray-800/40">
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-red-100 text-red-600 flex items-center justify-center">
-                                    <span className="material-symbols-outlined text-3xl">currency_rupee</span>
-                                </div>
-                                <h3 className="text-4xl font-bold text-secondary dark:text-white">Giving Cash</h3>
-                            </div>
-                            <p className="text-gray-600 dark:text-gray-400 mt-5 text-[1.15rem] leading-relaxed">
-                                Helpful in emergencies, but no structured healthcare advantage after the money is spent.
-                            </p>
+                {/* Column Headers */}
+                <div className="grid grid-cols-[1fr_1fr_1fr] gap-4 mb-4 px-2">
+                    <div />
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 text-center">
+                        <div className="w-12 h-12 mx-auto rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center mb-3">
+                            <span className="material-symbols-outlined text-2xl">currency_rupee</span>
                         </div>
-                        <div className="p-8 bg-gradient-to-br from-[#eaf7f4] to-[#eef8f9] dark:from-[#123826] dark:to-[#10283f]">
-                            <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center">
-                                    <span className="material-symbols-outlined text-3xl">health_and_safety</span>
-                                </div>
-                                <h3 className="text-4xl font-bold text-secondary dark:text-white">Gifting OXXY</h3>
-                            </div>
-                            <p className="text-gray-700 dark:text-gray-200 mt-5 text-[1.15rem] leading-relaxed">
-                                Creates repeatable medical savings and organized care support over multiple treatments.
-                            </p>
-                        </div>
+                        <p className="text-white font-bold text-xl">Giving Cash</p>
+                        <p className="text-gray-500 text-sm mt-1">One-time. Forgettable.</p>
                     </div>
+                    <div className="bg-gradient-to-br from-primary/20 to-teal-custom/20 border border-primary/30 rounded-2xl p-5 text-center relative overflow-hidden">
+                        <div className="absolute top-3 right-3 bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full">BEST GIFT</div>
+                        <div className="w-12 h-12 mx-auto rounded-xl bg-primary text-white flex items-center justify-center mb-3">
+                            <span className="material-symbols-outlined text-2xl">card_giftcard</span>
+                        </div>
+                        <p className="text-white font-bold text-xl">Gifting Oxxy</p>
+                        <p className="text-teal-400 text-sm mt-1">Ongoing. Meaningful.</p>
+                    </div>
+                </div>
 
-                    <div className="md:hidden p-4 space-y-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/60">
-                        <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-surface-dark p-5">
-                            <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-red-100 text-red-600 flex items-center justify-center">
-                                    <span className="material-symbols-outlined">currency_rupee</span>
+                {/* Comparison Rows */}
+                <div className="space-y-3">
+                    {rows.map((row, i) => (
+                        <div
+                            key={row.topic}
+                            className="grid grid-cols-[1fr_1fr_1fr] gap-4 items-stretch"
+                            style={{ animationDelay: `${i * 60}ms` }}
+                        >
+                            {/* Label */}
+                            <div className="bg-white/5 border border-white/8 rounded-2xl px-4 py-4 flex items-center gap-3">
+                                <div className="w-9 h-9 rounded-xl bg-white/5 text-gray-400 flex items-center justify-center flex-shrink-0">
+                                    <span className="material-symbols-outlined text-lg">{row.icon}</span>
                                 </div>
-                                <h3 className="text-xl font-bold text-secondary dark:text-white">Giving Cash</h3>
+                                <p className="text-gray-300 font-semibold text-sm leading-tight">{row.topic}</p>
                             </div>
-                            <p className="text-gray-600 dark:text-gray-400 mt-3">
-                                Helpful in emergencies, but no structured healthcare advantage after the money is spent.
-                            </p>
-                        </div>
-                        <div className="rounded-2xl border border-gray-200 dark:border-gray-700 bg-gradient-to-br from-[#eaf7f4] to-[#eef8f9] dark:from-[#123826] dark:to-[#10283f] p-5">
-                            <div className="flex items-center gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center">
-                                    <span className="material-symbols-outlined">health_and_safety</span>
-                                </div>
-                                <h3 className="text-xl font-bold text-secondary dark:text-white">Gifting OXXY</h3>
-                            </div>
-                            <p className="text-gray-700 dark:text-gray-200 mt-3">
-                                Creates repeatable medical savings and organized care support over multiple treatments.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div className="divide-y divide-gray-100 dark:divide-gray-700">
-                        {comparisonRows.map((row) => (
-                            <div
-                                key={row.topic}
-                                className="grid grid-cols-1 md:grid-cols-[220px_1fr_1fr] md:items-center gap-3 md:gap-0 p-5 md:p-0"
-                            >
-                                <h4 className="md:p-7 text-sm md:text-[1.05rem] uppercase tracking-wider font-bold text-gray-500 dark:text-gray-400">
-                                    {row.topic}
-                                </h4>
-                                <p className="md:p-7 md:border-l border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 text-base md:text-[1.08rem] leading-relaxed">
-                                    {row.cash}
-                                </p>
-                                <p className="md:p-7 md:border-l border-gray-200 dark:border-gray-700 text-secondary dark:text-white font-semibold text-base md:text-[1.08rem] leading-relaxed">
-                                    {row.oxxy}
-                                </p>
+                            {/* Cash column */}
+                            <div className="bg-white/[0.03] border border-white/8 rounded-2xl px-5 py-4 flex items-center gap-3">
+                                <span className="material-symbols-outlined text-red-500 text-lg flex-shrink-0">close</span>
+                                <p className="text-gray-400 text-sm leading-snug">{row.cash}</p>
                             </div>
-                        ))}
-                    </div>
+
+                            {/* Oxxy column */}
+                            <div className="bg-gradient-to-r from-primary/10 to-teal-custom/10 border border-primary/25 rounded-2xl px-5 py-4 flex items-center gap-3">
+                                <span className="material-symbols-outlined fill-1 text-primary text-lg flex-shrink-0">check_circle</span>
+                                <p className="text-white font-semibold text-sm leading-snug">{row.oxxy}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Bottom CTA note */}
+                <div className="mt-12 text-center">
+                    <p className="text-gray-500 italic text-base">
+                        "Because the best gifts protect, not just delight."
+                    </p>
                 </div>
             </div>
         </section>

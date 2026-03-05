@@ -1,24 +1,24 @@
 export default function FAQ() {
     const faqs = [
         {
-            question: "What exactly is Oxxy Health Savings?",
-            answer: "Oxxy Health Savings is India's largest healthcare network that guarantees you discounted rates on treatments, tests, and medical procedures at over 2,00,000 affiliated hospitals, clinics, and labs."
+            question: "What is this for?",
+            answer: "This helps you support your loved ones during medical emergencies by connecting you with structured guidance to lower treatment stress."
         },
         {
-            question: "How long is the waiting period before I can use the card?",
-            answer: "There is absolutely zero waiting period. Your card is active the moment you purchase it, and you can start saving on your medical bills instantly."
+            question: "Is this the same as health insurance?",
+            answer: "No. This does not replace insurance. It complements your planning with practical guidance and savings-focused support for real treatment situations."
         },
         {
-            question: "Does this replace my regular health insurance?",
-            answer: "No, Oxxy is not an insurance policy. It is a discount network. Health insurance covers hospitalization (usually IPD), while Oxxy gives you discounts on OPD, diagnostics, and procedures that insurance often rejects or limits."
+            question: "How quickly can I get support?",
+            answer: "After you share your details, the team follows up quickly and helps you with next steps based on your family's needs."
         },
         {
-            question: "Can I use the Family Card for my parents?",
-            answer: "Yes! The Family Shield covers up to 6 members of your family, which can include your parents, spouse, children, and even parents-in-law."
+            question: "Can I do this for my parents or relatives?",
+            answer: "Yes. You can request support for parents, spouse, children, or other close family members."
         },
         {
-            question: "How do I claim my discount at a hospital or lab?",
-            answer: "Simply present your active Oxxy Health Savings digital or physical card at the reception or billing desk of our partner centers before they generate the bill."
+            question: "What details do I need to share?",
+            answer: "Just your name, phone number, and city to get a callback and personalized support guidance."
         }
     ];
 

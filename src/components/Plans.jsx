@@ -1,99 +1,77 @@
 export default function Plans() {
     const plans = [
         {
-            name: "OXXY Everyday",
+            name: "OXXY EVERYDAY",
             originalPrice: "Rs. 2000",
             price: "Rs. 999",
             savings: "Rs. 40000",
             features: [
-                "Works on Bills up to 10 Lacs",
-                "Works on OPD",
-                "Applicable on New Diseases",
-                "Works on Eye & Dental Check ups",
-                "Age limit Upto 70 Years",
-                "Up to 20% Instant Discounts on all Treatments",
-                "50 Medical Records on Cloud for Free",
-                "Appointment Booking",
-                "Activation in 72 hours",
-                "Health Screening Not Required",
+                "Best for routine consultations and diagnostics",
+                "Useful for OPD-focused care",
+                "Support for new treatment requirements",
+                "Helpful for eye and dental checkups",
+                "Fast onboarding support",
+                "Guidance for reducing treatment costs",
+                "Appointment coordination help",
+                "Simple process with no complexity",
             ],
         },
         {
-            name: "OXXY Vital",
+            name: "OXXY VITAL",
             originalPrice: "Rs. 4000",
             price: "Rs. 1999",
             savings: "Rs. 60000",
             features: [
-                "Works on Bills up to 20 Lacs",
-                "Works on OPD & IPD",
-                "Applicable on New Diseases",
-                "Works on Eye, Dental & Skin Check ups",
-                "Age limit Upto 75 Years",
-                "Up to 25% Instant Discounts on all Treatments",
-                "100 Medical Records on Cloud for Free",
-                "Priority Appointment Booking",
-                "Activation in 48 hours",
-                "Health Screening Not Required",
-                "Works during Pregnancy",
-                "No Treatment Exclusion",
+                "Balanced support for OPD and hospital care",
+                "Suitable for families with regular care needs",
+                "Helpful for eye, dental, and skin care",
+                "Priority response support",
+                "Faster onboarding process",
+                "Pregnancy-related support use cases",
+                "Broader treatment coverage guidance",
             ],
         },
         {
-            name: "OXXY Thrive",
+            name: "OXXY THRIVE",
             originalPrice: "Rs. 6000",
             price: "Rs. 2999",
             savings: "Rs. 100000",
             features: [
-                "Works on Bills up to 30 Lacs",
-                "Works on OPD & IPD",
-                "Applicable on New & Pre-Existing Diseases",
-                "Works on Eye, Dental & Skin Treatments",
-                "Age limit Upto 80 Years",
-                "Up to 30% Instant Discounts on all Treatments",
-                "200 Medical Records on Cloud for Free",
-                "Priority Appointment Booking",
-                "Activation in 24 hours",
-                "Health Screening Not Required",
-                "Works during Pregnancy",
-                "No Treatment Exclusion",
-                "Good for Cancers & Heart Patients",
+                "Higher-value guidance for major treatments",
+                "Support for new and pre-existing conditions",
+                "Useful for OPD and inpatient care",
+                "Good for cardiac and critical care planning",
+                "Faster assistance turnaround",
+                "Strong focus on treatment cost optimization",
+                "Expanded care-navigation support",
             ],
         },
         {
-            name: "OXXY Infinity",
+            name: "OXXY INFINITY",
             originalPrice: "Rs. 8000",
             price: "Rs. 3999",
             savings: "Rs. 140000",
             features: [
-                "Works on Bills with No Upper Limit",
-                "Works on OPD & IPD",
-                "Applicable on New & Pre-Existing Diseases",
-                "Works on Eye, Dental, Skin & Cosmetic Treatments",
-                "No Age limit",
-                "Up to 40% Instant Discounts on all Treatments",
-                "500 Medical Records on Cloud for Free",
-                "Priority Appointment Booking",
-                "Activation in 24 hours",
-                "Health Screening Not Required",
-                "Works during Pregnancy",
-                "No Treatment Exclusion",
-                "Good for Covid, Cancers & Heart Patients",
+                "Comprehensive support for complex medical needs",
+                "Designed for recurring and high-cost treatments",
+                "Works across OPD and inpatient care journeys",
+                "Useful for multi-specialty treatment planning",
+                "High-priority coordination assistance",
+                "Maximum focus on long-term medical savings",
+                "Best for families wanting full peace of mind",
             ],
         },
     ];
 
     return (
-        <section className="py-16 bg-gray-50 dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
+        <section id="support-options" className="py-16 bg-gray-50 dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <a
-                        href="https://www.oxxy.in"
-                        className="text-primary font-bold tracking-wider uppercase text-sm hover:underline"
-                    >
-                        Give The Gift of Savings
-                    </a>
+                    <span className="text-primary font-bold tracking-wider uppercase text-sm">
+                        Support Options
+                    </span>
                     <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">Choose How To Help Your Loved Ones</h2>
-                    <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Pick from the latest OXXY plans based on current pricing, savings and treatment coverage.</p>
+                    <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Pick the support level that matches your family's health needs and budget comfort.</p>
                 </div>
 
                 <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3 px-1">
@@ -131,16 +109,16 @@ export default function Plans() {
                                     ))}
                                 </ul>
                                 <a
-                                    href="https://www.oxxy.in"
+                                    href="tel:8800855340"
                                     className="w-full py-2.5 px-6 bg-gray-100 dark:bg-gray-800 text-secondary dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition mt-auto inline-flex items-center justify-center"
                                 >
-                                    Buy Now
+                                    Talk to Support
                                 </a>
                             </div>
                         );
                     })}
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">Swipe to view all plans.</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">Swipe to view all support options.</p>
             </div>
         </section>
     );

@@ -17,7 +17,7 @@ export default function Testimonial() {
                         <div className="space-y-4">
                             <h3 className="text-primary font-bold tracking-widest uppercase text-sm">Empowering Your Family</h3>
                             <h2 className="font-display text-xl md:text-3xl font-medium leading-relaxed text-gray-100">
-                                "When my father needed urgent eye surgery, I couldn't be there. But gifting him Oxxy cut his bill by 40%. It wasn't just about the money, <span className="text-primary font-bold underline decoration-2 underline-offset-8">it was giving him a solution</span> when he needed it most."
+                                "When my father needed urgent eye surgery, I couldn't be there. The support helped us reduce his bill and move quickly. It wasn't just about money, <span className="text-primary font-bold underline decoration-2 underline-offset-8">it was knowing he wasn't alone</span> when he needed us most."
                             </h2>
                         </div>
                         <div className="flex items-center space-x-4">
