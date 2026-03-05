@@ -19,16 +19,13 @@ export default function Hero() {
 
                         {/* Headline */}
                         <h1 className="font-display font-bold text-5xl sm:text-6xl lg:text-[4rem] text-secondary dark:text-white leading-[1.08] tracking-tight">
-                            Some Gifts Are<br />
-                            Forgotten.<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-custom via-primary to-[#15a352]">
-                                This One Saves Lives.
-                            </span>
+                            A Friend in need<br />
+                            also needs Oxxy
                         </h1>
 
                         {/* Subheadline */}
                         <p className="text-lg text-gray-500 dark:text-gray-300 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                            Gift Oxxy to your parents, spouse, or best friend — and give them <strong className="text-secondary dark:text-white">up to 40% off</strong> on every hospital bill, doctor visit, and diagnostic test.
+                            Be the friend they need. Gift Oxxy to your friends, colleagues, or network — and give them up to 40% off on every hospital bill, doctor visit, and diagnostic test.
                         </p>
 
                         {/* Trust pill strip */}
@@ -52,7 +49,7 @@ export default function Hero() {
                                 className="relative group flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-5 bg-gradient-to-r from-primary to-[#12c951] text-white font-bold text-lg rounded-2xl shadow-[0_12px_28px_rgba(21,163,82,0.35)] hover:shadow-[0_16px_36px_rgba(21,163,82,0.5)] hover:-translate-y-0.5 transition-all duration-300"
                             >
                                 <span className="material-symbols-outlined text-2xl">card_giftcard</span>
-                                Gift This to a Loved One
+                                Gift Oxxy
                             </a>
                             <a
                                 href="#how-it-works"
@@ -73,9 +70,9 @@ export default function Hero() {
 
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/60 dark:border-gray-700">
                             <img
-                                alt="Smiling person gifting health protection to their parents"
+                                alt="Friend showing another friend the Oxxy healthcare app on their phone in a hospital waiting area"
                                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-                                src="/hero.jpeg"
+                                src="/hero_friend.png"
                             />
                             {/* Overlay gradient at bottom */}
                             <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-black/40 to-transparent" />

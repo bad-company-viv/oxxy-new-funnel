@@ -1,13 +1,11 @@
 import { useState } from 'react';
 
 const giftForOptions = [
-    "My Parents",
-    "My Spouse / Partner",
-    "My Children",
-    "My Best Friend",
-    "My Sibling",
-    "My Grandparents",
-    "Someone Else",
+    "Friend",
+    "Relative",
+    "Colleague",
+    "Someone in need",
+    "Any other",
 ];
 
 export default function LeadForm({ onSuccess, source = "unknown" }) {
@@ -53,7 +51,7 @@ export default function LeadForm({ onSuccess, source = "unknown" }) {
                     <input
                         type="text"
                         required
-                        placeholder="Rahul Sharma"
+                        placeholder="Enter your name"
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         className="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-secondary dark:text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors text-base"
@@ -69,7 +67,7 @@ export default function LeadForm({ onSuccess, source = "unknown" }) {
                     <input
                         type="tel"
                         required
-                        placeholder="+91 98765 43210"
+                        placeholder="Enter your phone number"
                         value={form.phone}
                         onChange={(e) => setForm({ ...form, phone: e.target.value })}
                         className="w-full pl-11 pr-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-secondary dark:text-white placeholder-gray-400 focus:outline-none focus:border-primary transition-colors text-base"

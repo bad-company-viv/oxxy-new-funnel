@@ -39,7 +39,7 @@ export default function CTA() {
                     className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-[#12c951] text-white text-xl font-bold py-5 px-10 rounded-2xl shadow-[0_16px_40px_rgba(21,163,82,0.4)] hover:shadow-[0_20px_50px_rgba(21,163,82,0.55)] hover:-translate-y-1 transition-all duration-300"
                 >
                     <span className="material-symbols-outlined text-2xl">card_giftcard</span>
-                    Gift Oxxy to Someone You Love
+                    Gift Oxxy
                     <span className="material-symbols-outlined fill-1 text-2xl">favorite</span>
                 </a>
 
