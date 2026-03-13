@@ -76,7 +76,7 @@ export default function Footer() {
                             aria-label="GoCommercially"
                         >
                             <img
-                                src="/sitecredits/gocommercially.svg"
+                                src="/sitecredits/gocomercially.svg"
                                 alt="GoCommercially"
                                 className="h-3 w-auto"
                                 loading="lazy"
