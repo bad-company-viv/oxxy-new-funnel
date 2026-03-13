@@ -67,56 +67,58 @@ export default function Plans() {
         <section id="support-options" className="py-16 bg-gray-50 dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <span className="text-primary font-bold tracking-wider uppercase text-sm">
+                    <span className="text-primary font-bold tracking-wider uppercase text-xs sm:text-sm">
                         Support Options
                     </span>
-                    <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">Choose How To Help Your Loved Ones</h2>
-                    <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Pick the support level that matches your family's health needs and budget comfort.</p>
+                    <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-secondary dark:text-white mt-2">Choose How To Help Your Loved Ones</h2>
+                    <p className="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto text-sm sm:text-base">Pick the support level that matches your family's health needs and budget comfort.</p>
                 </div>
 
-                <div className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3 px-1">
-                    {plans.map((plan) => {
-                        const monthlyPrice = plan.price.replace("Rs. ", "");
+                <div className="overflow-hidden -mx-4 sm:mx-0">
+                    <div className="flex gap-4 sm:gap-5 overflow-x-auto snap-x snap-mandatory pb-3 px-4 sm:px-1">
+                        {plans.map((plan) => {
+                            const monthlyPrice = plan.price.replace("Rs. ", "");
 
-                        return (
-                            <div
-                                key={plan.name}
-                                className="bg-[#f7f7f8] dark:bg-surface-dark p-5 rounded-[1.75rem] shadow-sm border border-gray-200 dark:border-gray-700 transition-all hover:shadow-lg hover:-translate-y-1 flex flex-col h-[500px] min-w-[300px] sm:min-w-[330px] lg:min-w-[340px] snap-start"
-                            >
-                                <div className="mb-4 min-h-[145px]">
-                                    <h3 className="text-[2.1rem] leading-[1.05] font-bold tracking-tight text-secondary dark:text-white">
-                                        {plan.name}
-                                    </h3>
-                                    <div className="mt-3">
-                                        <p className="line-through text-red-500 text-[1.35rem] leading-none">{plan.originalPrice}</p>
-                                        <div className="mt-1 flex items-end gap-2">
-                                            <span className="font-display text-[2.6rem] leading-none font-bold text-primary">
-                                                Rs. {monthlyPrice}
-                                            </span>
-                                            <span className="text-gray-500 dark:text-gray-400 text-[1.5rem] leading-none pb-1">/month</span>
+                            return (
+                                <div
+                                    key={plan.name}
+                                    className="bg-[#f7f7f8] dark:bg-surface-dark p-4 sm:p-5 rounded-[1.75rem] shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-2 hover:border-primary/30 dark:hover:border-primary/40 flex flex-col h-[500px] min-w-[calc(100vw-2rem)] sm:min-w-[300px] md:min-w-[330px] lg:min-w-[340px] snap-start group ml-4 sm:ml-0"
+                                >
+                                    <div className="mb-4 min-h-[145px]">
+                                        <h3 className="text-xl sm:text-2xl leading-[1.05] font-bold tracking-tight text-secondary dark:text-white">
+                                            {plan.name}
+                                        </h3>
+                                        <div className="mt-3">
+                                            <p className="line-through text-red-500 text-sm sm:text-base leading-none">{plan.originalPrice}</p>
+                                            <div className="mt-1 flex items-end gap-2">
+                                                <span className="font-display text-2xl sm:text-3xl leading-none font-bold text-primary">
+                                                    Rs. {monthlyPrice}
+                                                </span>
+                                                <span className="text-gray-500 dark:text-gray-400 text-sm sm:text-base leading-none pb-1">/month</span>
+                                            </div>
                                         </div>
                                     </div>
+                                    <p className="mb-4 min-h-[96px] bg-gray-200/70 dark:bg-gray-800 text-secondary dark:text-gray-100 text-sm sm:text-base font-semibold px-4 py-3 rounded-xl flex items-center leading-tight">
+                                        GUARANTEED ANNUAL SAVINGS of {plan.savings}*
+                                    </p>
+                                    <ul className="space-y-2 sm:space-y-2.5 mb-5 text-xs sm:text-sm text-gray-600 dark:text-gray-400 flex-grow min-h-0 overflow-y-auto pr-1 leading-[1.35]">
+                                        {plan.features.map((feature) => (
+                                            <li key={feature} className="flex items-start">
+                                                <span className="material-symbols-outlined text-teal-custom mr-2 sm:mr-3 text-base leading-5 flex-shrink-0">check_circle</span>
+                                                <span>{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <a
+                                        href="tel:8800855340"
+                                        className="w-full py-2.5 px-4 sm:px-6 bg-gray-100 dark:bg-gray-800 text-secondary dark:text-white font-bold text-sm sm:text-base rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition mt-auto inline-flex items-center justify-center group-hover:bg-primary group-hover:text-white dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300"
+                                    >
+                                        Talk to Support
+                                    </a>
                                 </div>
-                                <p className="mb-4 min-h-[96px] bg-gray-200/70 dark:bg-gray-800 text-secondary dark:text-gray-100 text-[1.15rem] font-semibold px-4 py-3 rounded-xl flex items-center leading-tight">
-                                    GUARANTEED ANNUAL SAVINGS of {plan.savings}*
-                                </p>
-                                <ul className="space-y-2.5 mb-5 text-[1rem] text-gray-600 dark:text-gray-400 flex-grow min-h-0 overflow-y-auto pr-1 leading-[1.35]">
-                                    {plan.features.map((feature) => (
-                                        <li key={feature} className="flex items-start">
-                                            <span className="material-symbols-outlined text-teal-custom mr-3 text-base leading-5">check_circle</span>
-                                            <span>{feature}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                <a
-                                    href="tel:8800855340"
-                                    className="w-full py-2.5 px-6 bg-gray-100 dark:bg-gray-800 text-secondary dark:text-white font-bold rounded-xl hover:bg-gray-200 dark:hover:bg-gray-700 transition mt-auto inline-flex items-center justify-center"
-                                >
-                                    Talk to Support
-                                </a>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">Swipe to view all support options.</p>
             </div>

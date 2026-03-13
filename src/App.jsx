@@ -20,7 +20,7 @@ import LeadPopup from './components/LeadPopup';
 
 function App() {
   return (
-    <div className="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300 pb-24 md:pb-0">
+    <div className="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body transition-colors duration-300 pb-0 md:pb-0">
       <Navbar />
       <Hero />
       <MediaCoverage />

@@ -30,7 +30,7 @@ const personas = [
         accent: "border-violet-200 dark:border-violet-800",
         headline: "Real friends cover hospital bills — not just drinks.",
         desc: "Lost job insurance? Between plans? Oxxy is the gift that actually shows up when it matters most.",
-        points: ["No waiting period to use", "Works in 1,500+ cities", "Instant 40% savings"],
+        points: ["No waiting period to use", "Works in 1,800+ cities", "Instant 40% savings"],
     },
     {
         icon: "child_care",
@@ -46,7 +46,7 @@ const personas = [
 ];
 
 const stats = [
-    { value: "1,500+", label: "Cities" },
+    { value: "1,800+", label: "Cities" },
     { value: "2,00,000+", label: "Hospitals & Diagnostics" },
     { value: "2 Crore+", label: "Families Protected" },
 ];

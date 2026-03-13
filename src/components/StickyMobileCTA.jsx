@@ -1,6 +1,6 @@
 export default function StickyMobileCTA() {
     return (
-        <div className="md:hidden fixed inset-x-3 bottom-3 z-[70]" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
+        <div className="hidden md:block lg:hidden fixed inset-x-3 bottom-3 z-[70]" style={{ paddingBottom: "env(safe-area-inset-bottom)" }}>
             <div className="grid grid-cols-2 gap-2 p-2 rounded-2xl border border-gray-200 bg-white/95 backdrop-blur shadow-[0_10px_30px_rgba(10,25,47,0.2)]">
                 <a
                     href="tel:8800855340"

@@ -66,11 +66,6 @@ export default function GiftStories() {
                             {/* Gradient accent top border */}
                             <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${s.color}`} />
 
-                            {/* Occasion badge */}
-                            <span className="inline-block text-xs font-bold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 px-3 py-1.5 rounded-full mb-5">
-                                {s.occasion}
-                            </span>
-
                             {/* Quote */}
                             <p className="text-gray-700 dark:text-gray-200 text-[1.05rem] leading-relaxed mb-6 italic">
                                 "{s.quote}"

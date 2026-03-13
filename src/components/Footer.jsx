@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <footer className="bg-secondary dark:bg-black text-white pt-16 pb-8 border-t border-gray-800">
+        <footer className="bg-secondary dark:bg-black text-white pt-8 sm:pt-16 pb-4 sm:pb-8 border-t border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-12 mb-8 sm:mb-12">
                     <div className="space-y-4">
                         <a href="https://www.oxxy.in" className="inline-block">
                             <img src="https://www.oxxy.in/image/oxxy_logo.png" alt="OXXY" className="h-10 w-auto" />
@@ -46,8 +46,45 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="border-t border-gray-700 pt-8 flex justify-center items-center">
-                    <p className="text-sm text-gray-400">© 2026 Oxxy Health. Protecting Indian Families Since Inception.</p>
+                <div className="border-t border-gray-700 pt-4 sm:pt-8 flex flex-col items-center justify-center gap-4">
+                    <p className="text-xs sm:text-sm text-gray-400 text-center">© 2026 Oxxy Health. Protecting Indian Families Since Inception.</p>
+                    
+                    {/* Credit Section */}
+                    <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300">
+                        <a
+                            href="https://fabulousmedia.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                            aria-label="FabulousMedia"
+                        >
+                            <img
+                                src="/sitecredits/fabulous.png"
+                                alt="FabulousMedia"
+                                className="h-3 w-auto"
+                                loading="lazy"
+                                width="80"
+                                height="12"
+                            />
+                        </a>
+                        <div className="h-3 w-px bg-white/30 transition-colors duration-300"></div>
+                        <a
+                            href="https://gocommercially.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                            aria-label="GoCommercially"
+                        >
+                            <img
+                                src="/sitecredits/gocommercially.svg"
+                                alt="GoCommercially"
+                                className="h-3 w-auto"
+                                loading="lazy"
+                                width="80"
+                                height="12"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
