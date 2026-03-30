@@ -11,6 +11,9 @@ export default function Navbar() {
                         </div>
                     </div>
                     <div className="hidden md:flex items-center space-x-6">
+                        <a href="#affiliate" className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition font-medium">
+                            Affiliate Program
+                        </a>
                         <div className="flex items-center gap-3 ml-2">
                             <a
                                 href="#get-support"

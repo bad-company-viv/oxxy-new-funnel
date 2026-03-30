@@ -12,6 +12,7 @@ import LeadFormSection from './components/LeadFormSection';
 import Plans from './components/Plans';
 import GiftStories from './components/GiftStories';
 import Testimonial from './components/Testimonial';
+import AffiliateProgram from './components/AffiliateProgram';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -35,6 +36,7 @@ function App() {
       <Plans />
       <LeadFormSection />
       <Testimonial />
+      <AffiliateProgram />
       <FAQ />
       <CTA />
       <Footer />
